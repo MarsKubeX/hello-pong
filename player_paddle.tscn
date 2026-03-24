@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dc42hntlyj3mg"]
+
+[ext_resource type="Script" uid="uid://diogp0s2gv0tk" path="res://player_paddle.gd" id="1_ixoi3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i4pfk"]
+size = Vector2(15, 100)
+
+[node name="PlayerPaddle" type="CharacterBody2D" unique_id=940602221 groups=["paddles"]]
+disable_mode = 1
+motion_mode = 1
+wall_min_slide_angle = 0.0
+platform_on_leave = 2
+safe_margin = 0.001
+script = ExtResource("1_ixoi3")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=24926253]
+offset_right = 15.0
+offset_bottom = 100.0
+color = Color(0.9999772, 0.16469064, 0.19671103, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=48300530]
+position = Vector2(7.5, 50)
+shape = SubResource("RectangleShape2D_i4pfk")

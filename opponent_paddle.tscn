@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dk355lnn020t1"]
+
+[ext_resource type="Script" uid="uid://coeumm8k81mkk" path="res://opponent_paddle.gd" id="1_slloe"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i4pfk"]
+size = Vector2(15, 100)
+
+[node name="OpponentPaddle" type="CharacterBody2D" unique_id=1814716077 groups=["paddles"]]
+disable_mode = 1
+script = ExtResource("1_slloe")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=24926253]
+offset_right = 15.0
+offset_bottom = 100.0
+color = Color(0.9999772, 0.16469064, 0.19671103, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=48300530]
+position = Vector2(7.5, 50)
+shape = SubResource("RectangleShape2D_i4pfk")

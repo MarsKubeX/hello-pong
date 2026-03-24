@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://cilcgu6xdglvo"]
+
+[ext_resource type="Texture2D" uid="uid://dsqfvcvj1bosj" path="res://images/menu_background.png" id="1_bj1uy"]
+[ext_resource type="Script" uid="uid://vqb27pgnn0sl" path="res://menu_principal.gd" id="1_gmcsc"]
+
+[node name="MenuPrincipal" type="Control" unique_id=2040328220]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_gmcsc")
+
+[node name="Background" type="TextureRect" parent="." unique_id=5660502]
+layout_mode = 0
+offset_top = -5.0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_bj1uy")
+expand_mode = 1
+
+[node name="TituloLabel" type="Label" parent="." unique_id=884151241]
+layout_mode = 0
+offset_left = 428.0
+offset_top = 127.0
+offset_right = 759.0
+offset_bottom = 215.0
+theme_override_colors/font_color = Color(0.8352941, 0.25882354, 0.21960784, 1)
+theme_override_font_sizes/font_size = 64
+text = "Hello Pong"
+
+[node name="JugarButton" type="Button" parent="." unique_id=845652615]
+layout_mode = 0
+offset_left = 515.0
+offset_top = 278.0
+offset_right = 656.0
+offset_bottom = 347.0
+theme_override_font_sizes/font_size = 24
+text = "Start"
+
+[connection signal="pressed" from="JugarButton" to="." method="_on_jugar_button_pressed"]
