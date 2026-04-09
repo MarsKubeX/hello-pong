@@ -1,4 +1,4 @@
-# Hello Pong for 1 player
+# Hello Pong for 2 players
 
 Este es un proyecto simple de Pong creado con Godot Engine y GDScript. El objetivo de este proyecto es aprender los conceptos básicos del desarrollo de videojuegos con Godot.
 
